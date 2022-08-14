@@ -2,7 +2,8 @@
 {
     public class MangaType
     {
-        // Жанр 
+        
+        public Guid Id { get; set; }
         public Guid IdManga { get; set; }
         public Guid IdType { get; set; }
 
