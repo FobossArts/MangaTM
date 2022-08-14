@@ -1,6 +1,7 @@
 ﻿using MangaTM.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using Microsoft.EntityFrameworkCore;
 
 namespace MangaTM.Controllers
 {
@@ -8,9 +9,12 @@ namespace MangaTM.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        ApplicationContext db;
+
+        public HomeController(ILogger<HomeController> logger, ApplicationContext context)
         {
             _logger = logger;
+            db = context;
         }
 
         public IActionResult Index()

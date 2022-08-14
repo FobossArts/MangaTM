@@ -1,6 +1,6 @@
 ﻿namespace MangaTM.Models
 {
-    public class Favourities
+    public class Favouritie
     {
         // избранное
         public Guid Id { get; set; }

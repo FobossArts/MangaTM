@@ -2,7 +2,7 @@
 {
     public class Type
     {
-        public Guid IdType { get; set; }
+        public Guid Id { get; set; }
         public string TypeName { get; set; }
 
     }

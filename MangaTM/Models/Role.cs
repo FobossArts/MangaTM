@@ -1,8 +1,8 @@
 ﻿namespace MangaTM.Models
 {
-    public class Roles
+    public class Role
     {
-        public Guid IdRole { get; set; }
+        public Guid Id { get; set; }
         public string RoleName { get; set; }
     }
 }
