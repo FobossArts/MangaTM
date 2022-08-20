@@ -1,4 +1,12 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿$(document).ready(function () {
+    $('.slider').slick({
+        accessibility:false,
+        arrows: false,
+        infinite: false,
+        adaptiveHeight: false,
+        slidesToShow: 8,
+        slidesToScroll: 4,
+        variableWidth:false,
+    });
+});
 
-// Write your JavaScript code.
