@@ -15,6 +15,7 @@ namespace MangaTM.Models
         public DbSet<Mark> Marks { get; set; } = null!;
         public DbSet<Favouritie> Favourities { get; set; } = null!;
         public DbSet<Commentarie> Commentaries { get; set; } = null!;
+        public DbSet<Chapter> Chapters { get; set; } = null!;
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
             : base(options)
         {

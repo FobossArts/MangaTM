@@ -15,6 +15,7 @@
         public List<Rating> Ratings { get; set; }
         public List<Favouritie> Favourities { get; set; }
         public List<Commentarie> Commentaries { get; set; }
+        public List<Chapter> Chapters { get; set; }
 
     }
 }
