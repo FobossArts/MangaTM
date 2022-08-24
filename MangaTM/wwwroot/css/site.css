@@ -14,8 +14,30 @@ body {
     width:auto;
 }
 
+.popular_updated {
+    max-height:200px;
+    width:auto;
+    margin:0;
+    padding:0;
+}
+
+.h5 {
+    padding-bottom:10px;
+}
+
+.new_updated {
+    max-height:190px;
+    width:auto;
+}
+
+.popular {
+    max-height: 140px;
+    width: auto;
+}
+
+
 .slick-list {
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .slick-track {
