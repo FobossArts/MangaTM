@@ -4,8 +4,10 @@
     {
         
         public Guid Id { get; set; }
-        public Guid IdManga { get; set; }
-        public Guid IdType { get; set; }
+        public int MangaId { get; set; }
+        public Manga Manga { get; set; }
+        public int TypeId { get; set; }
+        public Type Type { get; set; }
 
     }
 }

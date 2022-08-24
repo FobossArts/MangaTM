@@ -1,18 +1,32 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+.navbar-nav li a {
+    color: lightcoral;
+    font-size:16px;
 }
 
 body {
-  margin-bottom: 60px;
+    display: block;
+    background-color: #171717;
+}
+
+.slider_item {
+    margin-top:1px;
+    max-height:290px;
+    width:auto;
+}
+
+.slick-list {
+    overflow:hidden;
+}
+
+.slick-track {
+    display:flex;
+    align-items:flex-start;
+}
+
+.item_text div {
+    padding:0;
+}
+
+a {
+    text-decoration:none;
 }
