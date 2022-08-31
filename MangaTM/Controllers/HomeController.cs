@@ -2,13 +2,13 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
+using System.Net;
 
 namespace MangaTM.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
         ApplicationContext db;
 
         public HomeController(ILogger<HomeController> logger, ApplicationContext context)
@@ -19,7 +19,15 @@ namespace MangaTM.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var idManga = db.Mangas.Where(e => e.MangaName == "Chainsaw-Man").Select(x => x.Id.ToString()).FirstOrDefault();
+            var refer = db.Chapters.Where(e => e.MangaId == 1).Select(x => x.refer.ToString()).FirstOrDefault();
+            using (var client = new WebClient())
+            {
+                client.DownloadFile(new Uri(refer), @"C:\python\p001_00.png");
+            }
+            var dbb = db.Mangas.Where(e => e.MangaName == "Chainsaw-Man").Select(x => x.MangaName.ToString());
+            ViewBag.MangaName = dbb;
+            return View(db);
         }
 
         public IActionResult Privacy()
