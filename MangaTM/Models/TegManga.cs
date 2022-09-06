@@ -3,9 +3,9 @@
     public class TegManga
     {
         public Guid Id { get; set; }
-        public int MangaId { get; set; }
+        public Guid MangaId { get; set; }
         public Manga Manga { get; set; }
-        public int TegId { get; set; }
+        public Guid TegId { get; set; }
         public Teg Teg { get; set; }
 
     }

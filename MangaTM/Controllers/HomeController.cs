@@ -19,18 +19,10 @@ namespace MangaTM.Controllers
 
         public IActionResult Index()
         {
-            var idManga = db.Mangas.Where(e => e.MangaName == "Chainsaw-Man").Select(x => x.Id.ToString()).FirstOrDefault();
-            var refer = db.Chapters.Where(e => e.MangaId == 1).Select(x => x.refer.ToString()).FirstOrDefault();
-            using (var client = new WebClient())
-            {
-                client.DownloadFile(new Uri(refer), @"C:\python\p001_00.png");
-            }
-            var dbb = db.Mangas.Where(e => e.MangaName == "Chainsaw-Man").Select(x => x.MangaName.ToString());
-            ViewBag.MangaName = dbb;
-            return View(db);
+            return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult MangaView()
         {
             return View();
         }
