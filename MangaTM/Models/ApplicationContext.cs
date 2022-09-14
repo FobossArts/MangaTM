@@ -7,8 +7,8 @@ namespace MangaTM.Models
         public DbSet<User> Users { get; set; } = null!;
         public DbSet<Role> Roles { get; set; } = null!;
         public DbSet<Manga> Mangas { get; set; } = null!;
-        public DbSet<Type> Types { get; set; } = null!;
-        public DbSet<MangaType> MangaTypes { get; set; } = null!;
+        public DbSet<Genre> Genres { get; set; } = null!;
+        public DbSet<MangaGenre> MangaGenres { get; set; } = null!;
         public DbSet<Teg> Tegs { get; set; } = null!;
         public DbSet<TegManga> TegMangas { get; set; } = null!;
         public DbSet<Rating> Ratings { get; set; } = null!;
